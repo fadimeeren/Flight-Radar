@@ -1,10 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/header";
+import List from "./pages/list";
+import Map from "./pages/map";
+
 const App = () => {
   return (
-    <div>
-      <a href="">SELAM</a>
-      <h1>SELAM</h1>
-      <button>DENEME</button>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Map />} />
+          <Route path="/list" element={<List />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 };
 

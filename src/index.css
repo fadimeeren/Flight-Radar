@@ -52,11 +52,27 @@ button {
   font-weight: 500;
   background: linear-gradient(
     135deg,
-    rgba(108, 99, 255, 0.2),
-    rgba(139, 132, 255, 0.1)
+    rgba(108, 99, 255, 0.1),
+    rgba(139, 132, 255, 0.005)
   );
+  cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
+    background: linear-gradient(
+      135deg,
+      rgba(108, 99, 255, 0.2),
+      rgba(139, 132, 255, 0.1)
+    );
   }
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
