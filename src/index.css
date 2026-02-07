@@ -91,7 +91,7 @@ header {
     }
     h2 {
       font-size: 21px;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
   nav {
@@ -100,12 +100,38 @@ header {
     gap: 2px;
     padding: 4px;
     border-radius: 12px;
+    button {
+      color: white;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.444);
+    }
 
     a:first-child button {
       border-radius: 8px 0 0 8px;
     }
     a:last-child button {
       border-radius: 0 8px 8px 0;
+    }
+    .active button {
+      background: linear-gradient(135deg, #6c63ff 0%, #8b84ff 100%);
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+    }
+  }
+}
+/* Harita */
+.leaflet-container {
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 16px;
+    h2 {
+      font-size: 23px;
+    }
+    h3 {
+      display: none;
     }
   }
 }
