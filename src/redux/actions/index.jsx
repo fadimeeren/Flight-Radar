@@ -5,7 +5,9 @@ import { params } from "../../utils/constants";
 export const getFlights = createAsyncThunk("flight/getFlights", async () => {
   const res = await api.get("/flights/list-in-boundary", { params });
 
-  console.log(res.data.aircraft);
+  res.data.aircraft.map(() => ({
+    flightId: i[0],
+  }));
 
   return "payload";
 });
