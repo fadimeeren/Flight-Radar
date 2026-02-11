@@ -119,9 +119,26 @@ header {
     }
   }
 }
+
 /* Harita */
 .leaflet-container {
   height: 100vh;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+  padding: 4px;
+
+  span {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
