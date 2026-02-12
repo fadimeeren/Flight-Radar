@@ -6,6 +6,7 @@ const initialState = {
   error: null,
   flights: [],
 };
+
 const flightSlice = createSlice({
   name: "flight",
   initialState,

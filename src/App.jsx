@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import List from "./pages/list";
 import Map from "./pages/map";
 import { useEffect } from "react";
-import { getFlights } from "./redux/actions";
 import { useDispatch } from "react-redux";
+import { getFlights } from "./redux/actions";
+import Modal from "./components/modal";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,8 @@ const App = () => {
           <Route path="/list" element={<List />} />
         </Routes>
       </main>
+
+      <Modal />
     </BrowserRouter>
   );
 };
